@@ -1,12 +1,13 @@
 import { NgStyle } from '@angular/common';
 import { Component, model, OnInit } from '@angular/core';
+
 import UserComponent from '../user/user.component';
 
 @Component({
   imports: [NgStyle, UserComponent],
   selector: 'app-sidebar',
   standalone: true,
-  styleUrls: ['./sidebar.components.scss'],
+  styleUrls: ['./sidebar.component.scss'],
   template: `
     <section
       [class.close]="status()"
