@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 8px;
+
+  height: 56px;
+  padding: 8px;
+
+  background-color: #dd0031;
+
+  & svg {
+    width: 170px;
+  }
+
+  & button[menu] {
+    border: 1px solid black;
+    border-radius: 8px;
+
+    background-color: white;
+    padding: 8px;
+
+    cursor: pointer;
+  }
+}
+
+.title {
+  text-align: center;
+
+  margin-top: 32px;
+
+  & h1 {
+    font-size: 3.125rem;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+  }
+
+  & span {
+    color: #dd0031;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
