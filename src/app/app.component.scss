@@ -1,12 +1,25 @@
-header {
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  gap: 8px;
-
-  height: 56px;
   padding: 8px;
+
+  gap: 8px;
 
   background-color: #dd0031;
 
@@ -14,31 +27,19 @@ header {
     width: 170px;
   }
 
-  & button[menu] {
-    border: 1px solid black;
-    border-radius: 8px;
-
-    background-color: white;
-    padding: 8px;
-
+  & span[menu] {
+    color: white;
+    
     cursor: pointer;
   }
 }
 
-.title {
-  text-align: center;
+.body {
+  grid-area: body;
 
-  margin-top: 32px;
+  height: calc(100vh - 76px);
+}
 
-  & h1 {
-    font-size: 3.125rem;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -0.125rem;
-  }
-
-  & span {
-    color: #dd0031;
-    font-family: 'Roboto Mono', monospace;
-  }
+.footer {
+  grid-area: footer;
 }
