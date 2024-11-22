@@ -4,11 +4,10 @@ import { Component, model, OnInit } from '@angular/core';
 import UserComponent from '../user/user.component';
 
 @Component({
-  imports: [NgStyle, UserComponent],
-  selector: 'app-sidebar',
-  standalone: true,
-  styleUrls: ['./sidebar.component.scss'],
-  template: `
+    imports: [NgStyle, UserComponent],
+    selector: 'app-sidebar',
+    styleUrls: ['./sidebar.component.scss'],
+    template: `
     <section
       [class.close]="status()"
       [ngStyle]="{
@@ -47,7 +46,7 @@ import UserComponent from '../user/user.component';
       <p>Loading...</p>
       }
     </section>
-  `,
+  `
 })
 export default class SidebarComponent implements OnInit {
   status = model<boolean>(true);
