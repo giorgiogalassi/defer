@@ -7,7 +7,15 @@ import { RouterLink } from "@angular/router";
   template: `
     <section class="title">
       <h1><span>&#64;defer</span> demo!</h1>
-      <a routerLink="/hydrate">Hydrate</a>
+      
+      <ul>
+        <li>
+          <a routerLink="/hydrate">Hydrate</a>
+        </li>
+        <li>
+          <a routerLink="/event-replay">Event Replay</a>
+        </li>
+      </ul>
     </section>
   `,
   styles: `

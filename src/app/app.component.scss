@@ -14,7 +14,7 @@
   grid-area: header;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   padding: 8px;
@@ -22,10 +22,6 @@
   gap: 8px;
 
   background-color: #dd0031;
-
-  & svg {
-    width: 170px;
-  }
 
   & span[menu] {
     color: white;

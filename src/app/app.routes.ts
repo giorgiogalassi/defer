@@ -9,5 +9,9 @@ export const routes: Routes = [
     path: "hydrate",
     loadComponent: () => import("./pages/hydrate/hydrate.component"),
   },
+  {
+    path: "event-replay",
+    loadComponent: () => import("./pages/event-replay/event-replay.component"),
+  },
   { path: "", redirectTo: "landing", pathMatch: "full" },
 ];
