@@ -1,21 +1,10 @@
 import { Component } from "@angular/core";
-import { RouterLink } from "@angular/router";
 
 @Component({
   selector: "app-landing",
-  imports: [RouterLink],
   template: `
     <section class="title">
       <h1><span>&#64;defer</span> demo!</h1>
-      
-      <ul>
-        <li>
-          <a routerLink="/hydrate">Hydrate</a>
-        </li>
-        <li>
-          <a routerLink="/event-replay">Event Replay</a>
-        </li>
-      </ul>
     </section>
   `,
   styles: `
@@ -32,7 +21,7 @@ import { RouterLink } from "@angular/router";
       }
 
       & span {
-        color: #dd0031;
+        color: var(--primary);
         font-family: "Roboto Mono", monospace;
       }
     }
