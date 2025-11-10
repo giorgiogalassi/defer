@@ -7,14 +7,14 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'about',
-    renderMode: RenderMode.Prerender
+    renderMode: RenderMode.Prerender,
   },
   {
     path: 'hydrate',
-    renderMode: RenderMode.Server
+    renderMode: RenderMode.Server,
   },
   {
     path: '**',
-    renderMode: RenderMode.Server
-  }
+    renderMode: RenderMode.Client,
+  },
 ];

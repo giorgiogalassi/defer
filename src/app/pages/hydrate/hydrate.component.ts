@@ -1,13 +1,13 @@
-import { Component, signal } from "@angular/core";
-import CounterComponent from "../../components/counter/counter.component";
+import { Component } from '@angular/core';
+import CounterComponent from '../../components/counter/counter.component';
 
 @Component({
-  selector: "app-hydrate",
+  selector: 'app-hydrate',
   imports: [CounterComponent],
   template: `
     <section note>
       <p>
-        NB: To test the <strong>EventReplay</strong> is suggested to set a
+        To test the <strong><span>EventReplay</span></strong> is suggested to set a
         network throttling to, at least, 4g. While the page is loading click the
         add/remove button. Once the page is fully loaded all the events will be
         replayed and the count signal will have the corret value.
