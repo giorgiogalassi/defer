@@ -26,17 +26,13 @@
             }
           },
           "options": {
-            "assets": [],
+            "assets": ["src/assets"],
             "index": "src/index.html",
             "browser": "src/main.ts",
             "outputPath": "dist/demo",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "scripts": [],
-            "styles": [
-              "src/global_styles.css"
-            ],
+            "styles": ["src/global_styles.css"],
             "tsConfig": "tsconfig.app.json",
             "server": "src/main.server.ts",
             "outputMode": "server",

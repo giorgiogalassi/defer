@@ -5,12 +5,12 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "header"
-    "body"
-    "footer";
+    'header'
+    'body'
+    'footer';
 }
 
-.header {
+header {
   grid-area: header;
 
   display: flex;
@@ -21,15 +21,16 @@
 
   gap: 8px;
 
-  background-color: #dd0031;
+  background-color: var(--header-color);
+  box-shadow: 0px 2px 10px 0px #000;
 
-  & svg {
-    width: 170px;
+  & img {
+    width: 75px;
   }
 
   & span[menu] {
-    color: white;
-    
+    color: var(--main-color);
+
     cursor: pointer;
   }
 }
@@ -37,7 +38,8 @@
 .body {
   grid-area: body;
 
-  height: calc(100vh - 76px);
+  height: calc(100vh - 91px);
+  background-color: var(--body-color);
 }
 
 .footer {

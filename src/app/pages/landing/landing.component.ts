@@ -1,12 +1,13 @@
-import { Component } from "@angular/core";
-import { RouterLink } from "@angular/router";
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: "app-landing",
+  selector: 'app-landing',
   imports: [RouterLink],
   template: `
     <section class="title">
       <h1><span>&#64;defer</span> demo!</h1>
+      <br />
       <a routerLink="/hydrate">Hydrate</a>
     </section>
   `,

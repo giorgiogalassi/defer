@@ -18,7 +18,5 @@ export type User = {
 export default class UserComponent {
   user = input.required<User>();
   nameAndSurname = computed(() => `${this.user().name} ${this.user().surname}`);
-  workTitleAndCompanyName = computed(
-    () => `${this.user().workTitle} @ ${this.user().companyName}`
-  );
+  workTitleAndCompanyName = computed(() => `${this.user().workTitle} @ ${this.user().companyName}`);
 }
