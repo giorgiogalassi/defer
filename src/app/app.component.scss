@@ -21,10 +21,10 @@
 
   gap: 8px;
 
-  background-color: #dd0031;
+  background-color: var(--primary);
 
-  & svg {
-    width: 170px;
+  & img[logo] {
+    height: 40px;
   }
 
   & span[menu] {
